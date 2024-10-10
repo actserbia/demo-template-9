@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body,
+        html {
+            font-family: Helvetica, sans-serif;
+            width: 100%;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            font-size: 18px;
+            box-sizing: border-box;
+            color: #535353;
+        }
+        .page-wrapper {
+            position: relative;
+            height: 100vh;
+        }
+        .page-container {
+            position: relative;
+            max-width: 1180px;
+            margin: auto;
+        }
+        @media (max-width: 767px) {
+            .page-container {
+                padding: 30px 15px;
+            }
+        }
+        @media (min-width: 768px) and (max-width: 1023px) {
+            .page-container {
+                padding: 30px 25px;
+            }
+        }
+        @media (min-width: 1024px) {
+            .page-container {
+                padding: 50px 30px;
+            }
+        }
+        .page-header {
+            position: relative;
+            margin-bottom: 10px;
+        }
+        .page-header__wrapper {
+            width: 100%;
+        }
+        @media (min-width: 1024px) {
+            .page-header__wrapper {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+            }
+        }
+        .page-logo {
+            position: relative;
+            width: 65px;
+            height: 26px;
+        }
+        .page-logo svg {
+            fill: #2050C3;
+        }
+        .page-header-title {
+            display: block;
+            font-size: 38px;
+            color: #2050C3;
+        }
+        @media (max-width: 1023px) {
+            .page-header-title {
+                padding-top: 15px;
+            }
+        }
+        @media (min-width: 1024px) {
+            .page-header-title {
+                margin-left: 20px;
+            }
+        }
+        .page-subtitle {
+            font-size: 25px;
+            font-weight: 300;
+            -webkit-font-smoothing: antialiased;
+            margin: 0 0 20px 0;
+        }
+        @media (min-width: 1024px) {
+            .page-subtitle {
+                padding-left: 85px;
+            }
+        }
+        .page-content__container {
+            position: relative;
+            min-height: 65vh;
+            display: flex;
+            align-items: center;
+        }
+        @media (min-width: 540px) and (max-width: 767px) {
+            .page-content__container {
+                padding: 0 30px;
+            }
+        }
+        @media (min-width: 768px) {
+            .page-content__container {
+                padding: 0 83px;
+            }
+        }
+        .page-content {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+        @media (min-width: 1024px) {
+            .page-content {
+                justify-content: space-between;
+            }
+        }
+        .page-video {
+            position: relative;
+            min-width: 290px;
+            margin: auto;
+            text-align: center;
+        }
+        @media (max-width: 989px) {
+            .page-video {
+                max-width: 100%;
+            }
+        }
+        @media (min-width: 990px) {
+            .page-video {
+                max-width: 75%;
+            }
+        }
+        .page-video video {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 16/9;
+        }
+        .page-video__description {
+            position: relative;
+            font-size: 15px;
+        }
+        .page-footer {
+            position: relative;
+        }
+        .page-label {
+            font-size: 16px;
+            color: #2050C3;
+            text-transform: uppercase;
+            margin-top: 20px;
+        }
+    </style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Video automation with AI</title>
+    </head>
+    <body>
+        <div class="page-wrapper">
+            <div class="page-container">
+                <header class="page-header">
+                    <div class="page-header__wrapper">
+                        <div class="page-logo">
+                            <svg width="65" height="26" viewBox="0 0 65 26">
+                                <g clip-path="url(#clip0_5856_824)">
+                                <path d="M55.9874 4.30469H52.4031C51.9766 4.30469 51.6309 4.64895 51.6309 5.07363V8.64282C51.6309 9.06749 51.9766 9.41176 52.4031 9.41176H55.9874C56.4138 9.41176 56.7596 9.06749 56.7596 8.64282V5.07363C56.7596 4.64895 56.4138 4.30469 55.9874 4.30469Z"/>
+                                <path d="M60.7528 1.86035H58.2714C57.9764 1.86035 57.7373 2.09846 57.7373 2.39218V4.86316C57.7373 5.15688 57.9764 5.39498 58.2714 5.39498H60.7528C61.0478 5.39498 61.2869 5.15688 61.2869 4.86316V2.39218C61.2869 2.09846 61.0478 1.86035 60.7528 1.86035Z"/>
+                                <path d="M55.7335 23.6191L54.3598 21.2403C54.0628 20.7257 53.4497 20.5001 52.878 20.6652C52.2948 20.8342 51.7761 20.8044 51.3712 20.5712C50.948 20.3273 50.6848 19.8848 50.6848 19.4163V1.40524C50.6848 0.6555 50.0746 0.046875 49.3207 0.046875H46.7997C46.0468 0.046875 45.4356 0.65454 45.4356 1.40524V4.31301H42.7989C42.0557 4.31301 41.4531 4.91299 41.4531 5.65314V8.07996C41.4531 8.8201 42.0557 9.42008 42.7989 9.42008H45.4356V19.4163C45.4356 21.7443 46.7023 23.9205 48.7423 25.0946C49.7921 25.6994 50.9557 25.9998 52.1617 25.9998C53.1296 25.9998 54.1255 25.8059 55.1117 25.42C55.827 25.1397 56.1162 24.2824 55.7325 23.6191H55.7335Z"/>
+                                <path d="M31.6557 25.9998C25.6593 25.9998 20.7803 21.1423 20.7803 15.1703C20.7803 9.1983 25.6583 4.34082 31.6557 4.34082C34.8862 4.34082 37.9412 5.79038 39.9889 8.21432C40.6155 8.95639 40.4092 10.0844 39.5685 10.5739L37.9663 11.5061C37.3223 11.8814 36.5067 11.7509 36.0006 11.2047C34.8948 10.0076 33.3177 9.2991 31.6547 9.2991C28.4039 9.2991 25.7596 11.9323 25.7596 15.1703C25.7596 18.4083 28.4039 21.0415 31.6547 21.0415C33.3148 21.0415 34.89 20.335 35.9958 19.1408C36.5019 18.5945 37.3175 18.465 37.9615 18.8403L39.5627 19.7744C40.4024 20.2639 40.6087 21.3929 39.9811 22.134C37.9335 24.5531 34.8814 25.9988 31.6547 25.9988L31.6557 25.9998Z"/>
+                                <path d="M17.1243 6.82914C18.8683 8.37183 19.7735 10.6115 19.7735 13.7218V18.4026C19.7735 23.1305 15.3717 25.2789 13.4301 25.709C11.8963 26.0488 6.57478 26.3234 4.16949 25.1234C3.003 24.5417 0 22.71 0 19.402C0 17.458 0.590959 16.044 2.06113 14.9294C3.53129 13.8149 5.80258 13.2571 8.87499 13.2571H14.6766C14.6766 11.9353 14.13 10.9388 13.487 10.3791C12.5027 9.52188 10.9043 9.33468 9.83132 9.33468C8.27921 9.33468 6.34341 10.1526 5.00339 10.9676C4.14925 11.4869 3.45128 11.1126 2.86321 10.2351L1.89146 8.53502C1.41136 7.60384 1.82108 6.92034 2.71282 6.36644C4.30735 5.37574 7.26311 4.28809 9.74167 4.28809C12.9953 4.28809 15.3804 5.28838 17.1243 6.8301V6.82914ZM12.8816 20.552C13.7058 20.1776 14.3112 19.2954 14.4944 18.7905C14.6776 18.2855 14.6342 17.1191 14.6342 17.1191H9.26543C6.71168 17.1191 5.43528 17.7575 5.43528 19.0333C5.43528 19.641 5.79776 20.1027 6.42246 20.457C7.04716 20.8112 8.77762 21.0176 9.86796 21.0176C10.9583 21.0176 12.0563 20.9274 12.8806 20.552H12.8816Z"/>
+                                <path d="M64.2854 0H62.6909C62.5013 0 62.3477 0.153007 62.3477 0.341752V1.92955C62.3477 2.1183 62.5013 2.2713 62.6909 2.2713H64.2854C64.4749 2.2713 64.6286 2.1183 64.6286 1.92955V0.341752C64.6286 0.153007 64.4749 0 64.2854 0Z"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_5856_824">
+                                <rect width="64.6286" height="26" fill="white"/>
+                                </clipPath>
+                                </defs>
+                                </svg>
+                        </div>
+                        <span class="page-header-title">Video automation with AI</span>
+                    </div>
+                </header>
+                <h2 class="page-subtitle">AI video trailer generation</h2>
+                <div class="page-content__container">
+                    <div class="page-content">
+                        <div class="page-video first-video">
+                            <video controls poster="assets/poster-image.png">
+                                <source src="assets/ai_video_editor_2.m4v" type="video/mp4">
+                            </video>
+                            <span class="page-video__description">AI generation of video trailer / youtube shorts</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-footer">
+                    <p class="page-label">Video automation with AI</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
